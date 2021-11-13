@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MiSubs">
         <activity
+            android:name=".Mantenedor_act"
+            android:exported="true" />
+        <activity
+            android:name=".Recomendaciones_act"
+            android:exported="true" />
+        <activity
+            android:name=".Home_act"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
