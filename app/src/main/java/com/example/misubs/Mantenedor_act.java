@@ -1,7 +1,6 @@
 package com.example.misubs;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class Mantenedor_act extends AppCompatActivity {
