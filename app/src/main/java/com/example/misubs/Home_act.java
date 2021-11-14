@@ -23,6 +23,10 @@ public class Home_act extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Mantenedores(View view){
+        Intent i = new Intent(this, Mantenedor_act.class);
+        startActivity(i);
+    }
 
 
 

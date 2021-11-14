@@ -5,11 +5,16 @@
       <map>
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.25" />
+<<<<<<< HEAD
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.25" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.165" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.165" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.335" />
+=======
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.33" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_registro.xml" value="0.36666666666666664" />
+>>>>>>> 0c5ead9a3bc9947e4adc5625db293018465f7d6d
       </map>
     </option>
   </component>
