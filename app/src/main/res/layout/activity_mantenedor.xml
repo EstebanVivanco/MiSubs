@@ -7,4 +7,129 @@
     android:layout_height="match_parent"
     tools:context=".Mantenedor_act">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:layout_width="441dp"
+      android:layout_height="54dp"
+      android:background="@color/purple_500"
+      android:backgroundTint="@color/purple_500"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.333"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button8"
+      app:layout_constraintVertical_bias="1.0">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="HOME" />
+
+    <Button
+        android:id="@+id/btnMantainer"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="MANTENEDOR" />
+
+    <Button
+        android:id="@+id/btnReco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Reco" />
+  </LinearLayout>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="384dp"
+      android:layout_height="272dp"
+      android:layout_marginTop="76dp"
+      app:cardCornerRadius="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:text="Crear Suscripcion"
+          android:textSize="30sp" />
+
+      <EditText
+          android:id="@+id/txtName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:text="Nombre" />
+
+      <EditText
+          android:id="@+id/txtPrice"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:text="Precio" />
+
+      <Button
+          android:id="@+id/btnCreateSub"
+          android:layout_width="match_parent"
+          android:layout_height="61dp"
+          android:text="Crear Sus" />
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="375dp"
+      android:layout_height="227dp"
+      android:layout_marginTop="48dp"
+      app:cardCornerRadius="10dp"
+      app:contentPadding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:text="Eliminar"
+          android:textSize="30sp" />
+
+      <Spinner
+          android:id="@+id/spnSuscripciones"
+          android:layout_width="match_parent"
+          android:layout_height="52dp" />
+
+      <Button
+          android:id="@+id/btnDeleteSub"
+          android:layout_width="match_parent"
+          android:layout_height="59dp"
+          android:text="Button" />
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
