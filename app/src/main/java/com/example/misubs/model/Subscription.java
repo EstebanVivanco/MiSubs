@@ -8,11 +8,15 @@ public class Subscription {
     private int user_id;
 
 
-    public Subscription(int id, String name, int value, int user_id) {
+    public Subscription(int id, String name, int value , int user_id) {
         this.id = id;
         this.name = name;
         this.value = value;
         this.user_id = user_id;
+
+    }
+
+    public Subscription() {
     }
 
     public int getId() {

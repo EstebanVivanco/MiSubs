@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
         txtmail = findViewById(R.id.txtMailLogin);
         txtpass = findViewById(R.id.txtPasswordLogin);
 
-
-
-
     }
 
     public void LoginUser(View view){
