@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -19,15 +20,20 @@ import java.util.List;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import android.widget.TextView;
+
+
 public class Home_act extends AppCompatActivity{
 
     Button btnListSubs;
     User oUser = new User();
 
+String ID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 
         btnListSubs = findViewById(R.id.btnListSubs);
 
@@ -39,6 +45,11 @@ public class Home_act extends AppCompatActivity{
                 Toast.makeText(Home_act.this, users.toString(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        Intent i = getIntent();
+        ID = i.getStringExtra("ID");
+
+
     }
 
 
@@ -53,6 +64,7 @@ public class Home_act extends AppCompatActivity{
 
     public void Mantenedores(View view){
         Intent i = new Intent(this, Mantenedor_act.class);
+        i.putExtra("ID", ""+ ID);
         startActivity(i);
     }
 
@@ -92,6 +104,24 @@ public class Home_act extends AppCompatActivity{
 
         return returnList;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

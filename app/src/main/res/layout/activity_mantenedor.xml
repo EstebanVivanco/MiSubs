@@ -62,7 +62,7 @@
         android:orientation="vertical">
 
       <TextView
-          android:id="@+id/textView3"
+          android:id="@+id/idUser"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginBottom="20dp"
@@ -91,6 +91,7 @@
           android:id="@+id/btnCreateSub"
           android:layout_width="match_parent"
           android:layout_height="61dp"
+          android:onClick="CrearSub"
           android:text="Crear Sus" />
 
     </LinearLayout>

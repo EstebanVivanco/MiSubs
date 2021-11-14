@@ -7,6 +7,7 @@
     tools:context=".Home_act">
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="413dp"
         android:layout_height="51dp"
         android:background="@color/purple_500"
@@ -40,6 +41,7 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btnListSubs"
         android:layout_width="wrap_content"
@@ -50,4 +52,6 @@
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+>>>>>>> 73ec0d7962a17b489198be280074a263c1d0650c
 </androidx.constraintlayout.widget.ConstraintLayout>
