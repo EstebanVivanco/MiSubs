@@ -78,7 +78,8 @@
                             android:layout_weight="1"
                             android:backgroundTint="@color/material_on_background_disabled"
                             android:text="Ir al sitio"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                     </LinearLayout>
 

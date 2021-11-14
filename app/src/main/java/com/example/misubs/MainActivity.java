@@ -21,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void Registro(View view){
+
+        Intent i = new Intent(this, Registro_act.class );
+        startActivity(i);
+
+    }
+
 
 }
