@@ -6,16 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Home_act">
 
+
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="413dp"
-        android:layout_height="51dp"
+        android:layout_height="58dp"
         android:background="@color/purple_500"
         android:backgroundTint="@color/purple_500"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvSubscription"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
             android:layout_width="99dp"
@@ -41,7 +44,6 @@
 
     </LinearLayout>
 
-<<<<<<< HEAD
     <Button
         android:id="@+id/btnListSubs"
         android:layout_width="wrap_content"
@@ -52,6 +54,14 @@
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-=======
->>>>>>> 73ec0d7962a17b489198be280074a263c1d0650c
+
+    <ListView
+        android:id="@+id/lvSubscription"
+        android:layout_width="377dp"
+        android:layout_height="553dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListSubs"
+        app:layout_constraintStart_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
