@@ -4,6 +4,226 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:backgroundTint="@color/purple_700"
     tools:context=".Recomendaciones_act">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="366dp"
+        android:layout_height="575dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/purple_700"
+        app:contentPadding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="341dp"
+            android:layout_height="553dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PUEDES PROBAR TAMBIÉN"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="325dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="324dp"
+                    android:layout_height="162dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textViewhg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Amazon Prime" />
+
+                    <ImageView
+                        android:id="@+id/AIDIhg"
+                        android:layout_width="294dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/amazon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewgh"
+                            android:layout_width="111dp"
+                            android:layout_height="18dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="$ 4.99 USD" />
+
+                        <Button
+                            android:id="@+id/btnDosj"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/material_on_background_disabled"
+                            android:text="Ir al sitio"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="327dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="323dp"
+                    android:layout_height="168dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textViewhgh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Disney Plus" />
+
+                    <ImageView
+                        android:id="@+id/AIDIhj"
+                        android:layout_width="289dp"
+                        android:layout_height="62dp"
+                        app:srcCompat="@drawable/disney" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView7g"
+                            android:layout_width="111dp"
+                            android:layout_height="18dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="$ 6.99 USD" />
+
+                        <Button
+                            android:id="@+id/btnDos5"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/material_on_background_disabled"
+                            android:text="Ir al sitio"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="327dp"
+                android:layout_height="157dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textViewh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="STAR PLUS" />
+
+                    <ImageView
+                        android:id="@+id/AIDIh"
+                        android:layout_width="283dp"
+                        android:layout_height="49dp"
+                        app:srcCompat="@drawable/star" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewg"
+                            android:layout_width="111dp"
+                            android:layout_height="18dp"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="$ 3.99 USD" />
+
+                        <Button
+                            android:id="@+id/btnDos"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/material_on_background_disabled"
+                            android:text="Ir al sitio"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="51dp"
+        android:background="@color/purple_500"
+        android:backgroundTint="@color/purple_500"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MANTENEDOR" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="HOME" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Explora" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
