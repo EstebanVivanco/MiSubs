@@ -4,17 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.25" />
-        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.25" />
-<<<<<<< HEAD
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.25" />
-        <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.165" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.165" />
-        <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.10190217391304347" />
-=======
-        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.33" />
->>>>>>> 73b5a998284f2a78ff7bbab60b7b940b92e075c4
+        <entry key="..\:/Carpetas/proyects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.335" />
       </map>
     </option>
   </component>
