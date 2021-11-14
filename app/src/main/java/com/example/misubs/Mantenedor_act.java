@@ -17,7 +17,7 @@ import com.example.misubs.DB.AdminSQLiteOpenHelper;
 public class Mantenedor_act extends AppCompatActivity {
 
     String ID;
-    private TextView UserID, name, price;
+    private TextView  name, price;
     private Spinner spnNames;
 
     @Override
@@ -26,14 +26,12 @@ public class Mantenedor_act extends AppCompatActivity {
         setContentView(R.layout.activity_mantenedor);
 
 
-        UserID = findViewById(R.id.idUser);
         name = findViewById(R.id.txtName);
         price = findViewById(R.id.txtPrice);
 
         Intent i = getIntent();
         ID = i.getStringExtra("ID");
 
-        UserID.setText(ID);
 
         spnNames = findViewById(R.id.spnSuscripciones);
 

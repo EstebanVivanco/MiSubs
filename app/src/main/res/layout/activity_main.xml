@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -43,7 +44,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Ingrese su correo..."
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/txtPasswordLogin"
@@ -51,7 +53,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Ingrese su Contraseña..."
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
 
             <Button
                 android:id="@+id/button4"

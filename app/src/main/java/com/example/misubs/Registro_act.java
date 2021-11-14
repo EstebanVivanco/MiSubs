@@ -47,13 +47,19 @@ public class Registro_act extends AppCompatActivity {
             db.close();
 
             Toast.makeText(getBaseContext(), "Usuario Registrado", Toast.LENGTH_LONG).show();
-
+            clean();
 
         }else{
             Toast.makeText(getBaseContext(), "Ingrese todos los campos", Toast.LENGTH_LONG).show();
         }
 
 
+    }
+
+    public void clean(){
+        mail.setText("");
+        username.setText("");
+        password.setText("");
     }
 
 

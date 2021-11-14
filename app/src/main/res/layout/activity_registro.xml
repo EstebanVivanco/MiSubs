@@ -4,48 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".Registro_act">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="336dp"
-        android:layout_height="209dp"
+        android:layout_width="352dp"
+        android:layout_height="289dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="352dp"
+            android:layout_height="290dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRATE AQUÍ"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/txtUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:hint="Ingrese su nombre..."
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
 
             <EditText
                 android:id="@+id/txtMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:hint="Ingrese su correo..."
+                android:inputType="textPersonName"
+                android:paddingTop="20dp" />
 
             <EditText
                 android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:hint="Ingrese su contraseña..."
+                android:inputType="textPassword"
+                android:paddingTop="20dp" />
 
             <Button
                 android:id="@+id/btnCreate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal_200"
                 android:onClick="addUser"
-                android:text="Button" />
+                android:text="Registrarme" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
