@@ -49,14 +49,14 @@ public class Mantenedor_act extends AppCompatActivity {
         SQLiteDatabase db = admin.getWritableDatabase(); //Permite sobreescribir database
 
         String Sname = name.getText().toString();
-        String Sprice = name.getText().toString();
+        String Sprice = price.getText().toString();
 
         if(!Sname.isEmpty() && !Sprice.isEmpty()){
 
             ContentValues content = new ContentValues();
 
             content.put("name",Sname);
-            content.put("value",Sprice);
+            content.put("value",Integer.parseInt(Sprice));
             content.put("user_id",Integer.parseInt(ID));
 
             db.insert("subscriptions", null, content);
