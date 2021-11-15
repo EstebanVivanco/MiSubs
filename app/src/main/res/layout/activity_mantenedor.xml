@@ -52,10 +52,9 @@
           android:id="@+id/txtPrice"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_marginBottom="10dp"
           android:ems="10"
           android:hint="Precio"
-          android:inputType="textPersonName" />
+          android:inputType="number" />
 
       <Button
           android:id="@+id/btnCreateSub"

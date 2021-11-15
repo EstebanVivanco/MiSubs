@@ -65,7 +65,7 @@
                         android:layout_height="18dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:text="$ 4.99 USD" />
+                        android:text="$ 4.165 CLP" />
 
                     <Button
                         android:id="@+id/btnDosj"
@@ -73,6 +73,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:backgroundTint="@color/material_on_background_disabled"
+                        android:onClick="Amazon"
                         android:text="Ir al sitio"
                         android:textSize="12sp"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -119,7 +120,7 @@
                         android:layout_height="18dp"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:text="$ 6.99 USD" />
+                        android:text="$ 1.500 CLP" />
 
                     <Button
                         android:id="@+id/btnDos5"
@@ -127,6 +128,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:backgroundTint="@color/material_on_background_disabled"
+                        android:onClick="Disney"
                         android:text="Ir al sitio"
                         android:textSize="12sp" />
 

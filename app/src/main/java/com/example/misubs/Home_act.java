@@ -126,15 +126,15 @@ public class Home_act extends AppCompatActivity {
 
             do {
                 String precio = (query.getString(0));
-                total =" $"+precio;
+                total ="TOTAL: $"+precio;
 
 
 
             } while (query.moveToNext());
 
         }
-        if (total.equalsIgnoreCase(" $null")){
-            total = " $0";
+        if (total.equalsIgnoreCase("TOTAL: $null")){
+            total = "TOTAL: $0";
             return total;
 
         }else {
