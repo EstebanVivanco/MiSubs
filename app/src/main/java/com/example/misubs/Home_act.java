@@ -29,6 +29,7 @@ import android.widget.TextView;
 
 public class Home_act extends AppCompatActivity {
 
+    TextView txtTotal;
     Button btnListSubs;
     User oUser = new User();
     ListView lv;
@@ -49,6 +50,12 @@ public class Home_act extends AppCompatActivity {
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lista);
         lv.setAdapter(adapter);
 
+        txtTotal = (TextView) findViewById(R.id.txtTotal);
+
+        txtTotal.setText(getTotal());
+
+
+
 
 
 
@@ -68,7 +75,6 @@ public class Home_act extends AppCompatActivity {
 
 
     public ArrayList getSubscriptions() {
-
 
         Intent i = getIntent();
         ID = i.getStringExtra("ID");
@@ -99,6 +105,41 @@ public class Home_act extends AppCompatActivity {
         }
             return lista;
 
+
+    }
+
+    public String getTotal(){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Database", null, 1);
+        SQLiteDatabase db = admin.getReadableDatabase();
+        ArrayList<String> lista = new ArrayList<>();
+        String total = null;
+
+
+        //Tomar bd
+        String queryString = "SELECT SUM(value) FROM subscriptions where user_id ="+ID;
+
+        Cursor query = db.rawQuery(queryString, null);
+
+
+
+        if (query.moveToFirst()) {
+
+            do {
+                String precio = (query.getString(0));
+                total =" $"+precio;
+
+
+
+            } while (query.moveToNext());
+
+        }
+        if (total.equalsIgnoreCase(" $null")){
+            total = " $0";
+            return total;
+
+        }else {
+            return total;
+        }
 
     }
 
