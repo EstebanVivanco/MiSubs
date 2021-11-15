@@ -23,6 +23,10 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="69dp" />
+
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="77dp"
@@ -71,6 +75,26 @@
                 android:backgroundTint="@color/teal_700"
                 android:onClick="Registro"
                 android:text="REGISTRATE AQUÍ" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="69dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="40dp"
+                    android:layout_height="34dp"
+                    android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+                    android:onClick="info"
+                    app:srcCompat="@drawable/ans" />
+            </LinearLayout>
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

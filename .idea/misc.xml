@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/drawable/gradient.xml" value="0.234375" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_info.xml" value="0.33" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_informacion.xml" value="0.36666666666666664" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.25" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_mantenedor.xml" value="0.33" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_maps.xml" value="0.20520833333333333" />
+        <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_maps_activity.xml" value="0.23489583333333333" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_recomendaciones.xml" value="0.33" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/activity_registro.xml" value="0.36666666666666664" />
         <entry key="..\:/Aprojects/MiSubs/app/src/main/res/layout/gradient.xml" value="0.21822916666666667" />

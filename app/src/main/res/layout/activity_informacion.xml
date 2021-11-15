@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informacion_act">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Gracias por hacer uso"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="De nuestra APP!"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="287dp"
+            android:layout_height="39dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="342dp"
+            android:layout_height="69dp"
+            android:text="Somos una pequeña empresa de desarrolladores ubicada en chile, justamente aquí " />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BTN2"
+            android:onClick="Maps"
+            android:text="VISITAR" />
+
+        <Space
+            android:layout_width="352dp"
+            android:layout_height="36dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="179dp"
+            android:layout_height="155dp"
+            app:srcCompat="@drawable/mundo" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

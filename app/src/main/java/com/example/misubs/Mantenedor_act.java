@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -23,9 +24,9 @@ public class Mantenedor_act extends AppCompatActivity {
     private TextView  name, price;
     private Spinner spnNames;
 
-    ArrayList<String> nombres;
 
-    ArrayList<String> nameList;
+    ArrayList<String> lista;
+
 
 
     @Override
@@ -44,11 +45,8 @@ public class Mantenedor_act extends AppCompatActivity {
         Intent i = getIntent();
         ID = i.getStringExtra("ID");
 
-
-
-        ArrayAdapter<CharSequence> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
-
-        spnNames.setAdapter(adapter);
+        lista = getValores();
+        llenarspinner();
 
         spnNames = findViewById(R.id.spnSuscripciones);
 
@@ -56,7 +54,7 @@ public class Mantenedor_act extends AppCompatActivity {
 
     }
 
-    public ArrayList llenarspinner(){
+    public void llenarspinner(){
 
 
         Intent i = getIntent();
@@ -64,29 +62,49 @@ public class Mantenedor_act extends AppCompatActivity {
 
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Database", null, 1);
         SQLiteDatabase db = admin.getReadableDatabase();
-        ArrayList<String> nombres = new ArrayList<>();
 
+
+        spnNames.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item,lista));
+
+    }
+
+    public ArrayList getValores() {
+
+
+        Intent i = getIntent();
+        ID = i.getStringExtra("ID");
+
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Database", null, 1);
+        SQLiteDatabase db = admin.getReadableDatabase();
+        ArrayList<String> lista = new ArrayList<>();
+
+
+        //Tomar bd
         String queryString = "SELECT name FROM subscriptions where user_id ="+ID;
 
         Cursor query = db.rawQuery(queryString, null);
+
+
 
         if (query.moveToFirst()) {
 
             do {
 
                 String nombre = (query.getString(0));
-                nombres.add(nombre);
+                lista.add(nombre);
 
             } while (query.moveToNext());
 
         }
-        return nombres;
+        return lista;
 
 
     }
 
 
     public void CrearSub(View view){
+
+
 
         //Credenciales
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Database",null, 1);
@@ -103,7 +121,16 @@ public class Mantenedor_act extends AppCompatActivity {
             content.put("value",Integer.parseInt(Sprice));
             content.put("user_id",Integer.parseInt(ID));
 
+
+
             db.insert("subscriptions", null, content);
+
+            clean();
+
+            //llenar valores del combobox again
+            lista = getValores();
+            llenarspinner();
+
             db.close();
 
             Toast.makeText(getBaseContext(), "Guardado Correctamente", Toast.LENGTH_LONG).show();
@@ -124,6 +151,38 @@ public class Mantenedor_act extends AppCompatActivity {
 
         startActivity(i);
 
+    }
+
+
+    public void eliminarSub(View view){
+
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Database",null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase(); //Permite sobreescribir database
+
+        String names = (String) spnNames.getSelectedItem();
+
+            Intent i = getIntent();
+            ID = i.getStringExtra("ID");
+
+            db.execSQL("DELETE FROM subscriptions WHERE name ='" +names+"' AND user_id="+ID);
+
+            //llenar valores del combobox again
+            lista = getValores();
+            llenarspinner();
+
+
+            Toast.makeText(getBaseContext(), "Suscripción eliminada", Toast.LENGTH_LONG).show();
+            db.close();
+
+
+    }
+
+
+
+
+    public void clean(){
+        name.setText("");
+        price.setText("");
     }
 
 
