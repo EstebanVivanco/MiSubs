@@ -142,6 +142,16 @@ public class Mantenedor_act extends AppCompatActivity {
 
     }
 
+    public void Recomendaciones(View view) {
+        Intent i = new Intent(this, Recomendaciones_act.class);
+        startActivity(i);
+    }
+
+    public void Mantenedores(View view) {
+        Intent i = new Intent(this, Mantenedor_act.class);
+        i.putExtra("ID", "" + ID);
+        startActivity(i);
+    }
 
     public void home(View view){
 
@@ -152,6 +162,7 @@ public class Mantenedor_act extends AppCompatActivity {
         startActivity(i);
 
     }
+
 
 
     public void eliminarSub(View view){
