@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backhome"
     tools:context=".Home_act">
 
 
@@ -11,34 +12,40 @@
         android:id="@+id/linearLayout3"
         android:layout_width="413dp"
         android:layout_height="58dp"
-        android:background="@color/purple_500"
-        android:backgroundTint="@color/purple_500"
+        android:background="@color/teal_200"
+        android:backgroundTint="@color/teal_200"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:onClick="Mantenedores"
             android:text="MANTENEDOR" />
 
         <Button
             android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:text="HOME" />
 
         <Button
             android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
             android:onClick="Recomendaciones"
-            android:text="Reco" />
+            android:text="EXPLORA" />
 
     </LinearLayout>
 
@@ -46,6 +53,8 @@
         android:id="@+id/listi"
         android:layout_width="377dp"
         android:layout_height="553dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"

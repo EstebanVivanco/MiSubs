@@ -131,6 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="@color/teal_200"
+        android:onClick="Mantenedores"
         android:text="MANTENEDOR" />
 
     <Button
@@ -150,6 +151,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="@color/teal_200"
+        android:onClick="Recomendaciones"
         android:text="Explora" />
   </LinearLayout>
 
